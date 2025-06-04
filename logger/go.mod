@@ -1,4 +1,4 @@
-module github.com/kprf42/dolgova/pkg/logger
+module github.com/kprf42/log/logger
 
 go 1.24.2
 
