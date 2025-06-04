@@ -149,3 +149,10 @@ func Any(key string, val interface{}) zap.Field {
 func Duration(key string, val float64) zap.Field {
 	return zap.Float64(key, val)
 }
+
+// NewLogger creates a new Logger instance
+func NewLogger(zapLogger *zap.Logger) *Logger {
+	return &Logger{
+		Logger: zapLogger,
+	}
+}
